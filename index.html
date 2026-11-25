@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sənə Özəl — Bir Addım, Bir Ömür</title>
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Yumşaq fon işıq parıltıları (Ambient Glows) -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Sağ yuxarı küncdə səs idarəetmə düyməsi -->
+    <button id="audioToggle" class="audio-btn" aria-label="Fon musiqisini aç və ya bağla" title="Musiqi">
+        <div class="sound-bars" id="soundBars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span class="audio-text" id="audioText">Səssiz</span>
+    </button>
+
+    <!-- Əsas Konteyner -->
+    <main class="container">
+        <!-- 1. Sual Kartı -->
+        <section class="glass-card active" id="questionCard">
+            <div class="editorial-tag">XÜSUSİ BİR SUAl</div>
+            
+            <div class="divider-line"></div>
+            
+            <h1 class="main-question">Mənimlə sevgili olarsan?</h1>
+            
+            <p class="subtitle">
+                Tələsmədən, səmimiyyətlə və hər anının dəyərini bilərək...
+            </p>
+
+            <div class="button-group" id="buttonGroup">
+                <button id="yesBtn" class="btn btn-yes">Hə</button>
+                <button id="noBtn" class="btn btn-no">Yox</button>
+            </div>
+        </section>
+
+        <!-- 2. Cavab Kartı ("Hə" basıldıqdan sonra açılır) -->
+        <section class="glass-card hidden" id="answerCard">
+            <div class="editorial-tag">YENİ BAŞLANĞIC</div>
+            
+            <div class="divider-line"></div>
+
+            <blockquote class="core-promise">
+                “Sənin üçün və gələcəkdəki son üçün ən doğru insan mənəm.”
+            </blockquote>
+
+            <div class="letter-body">
+                <p>
+                    Həyatın səs-küyündən uzaq, zamanın sınaqlarından üzüağ çıxacaq bir sakitlik arzulayıram bizim üçün. Dəyəri illər keçdikcə azalmayan, əksinə, hər fəsildə daha da dərinləşən bir bağlılıq...
+                </p>
+                <p>
+                    Səninlə keçəcək günlərin təkcə gözəl xatirələr deyil, həm də qarşılıqlı hörmət, anlayış və güvən üzərində qurulan möhkəm bir tarix olacağına inanıram. Yanında olmaq, səni dinləmək və hər halınla qəbul etmək mənim ən səmimi seçimimdir.
+                </p>
+            </div>
+
+            <div class="signature-block">
+                <span class="ornament">✦</span>
+                <p class="closing-note">Hər şey indi daha mənalıdır.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
